@@ -22,7 +22,7 @@ http {
     tcp_nopush            on;
     tcp_nodelay           on;
 
-    resolver ${NAMESERVER} ipv6=off valid=30s;
+    resolver 127.0.0.11 ${NAMESERVER} ipv6=off valid=30s;
 _EOF_
 
 nginx_upload_size='100m'
